@@ -1,12 +1,13 @@
 import './App.css'
+import Hero from './sections/Hero'
 
 function App() {
 
   return (
     <>
-      <h1>Pages test</h1>
+      <Hero />
     </>
-  )
+  );
 }
 
 export default App
