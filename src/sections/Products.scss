@@ -1,0 +1,39 @@
+#Products {
+    margin: 100px 0;
+
+    .candle-products {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .first {
+        width: fit-content;
+        height: fit-content;
+        border: 1px solid grey;
+    }
+
+    .img-cont {
+        background-color: #F7F8FA;
+        display: flex;
+        justify-content: center;
+        width: fit-content;
+    }
+
+    .candle-img {
+        margin: 20px 80px;
+    }
+
+    .info-cont {
+        box-sizing: border-box;
+        margin: 10px 26px;
+    }
+
+    .prod-title {
+        text-align: left;
+    }
+
+    .prod-price {
+        text-align: end;
+        color: green
+    }
+}

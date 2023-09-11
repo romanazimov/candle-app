@@ -36,6 +36,16 @@ button {
   line-height: 1;
 }
 
+p {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+.description {
+  font-size: 18px;
+  color: #5E6E89;
+}
+
 /* a {
   font-weight: 500;
   color: #646cff;
