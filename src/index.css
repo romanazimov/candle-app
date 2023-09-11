@@ -29,6 +29,13 @@ button {
   font-weight: bold;
 }
 
+.title {
+  font-size: 40px;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  line-height: 1;
+}
+
 /* a {
   font-weight: 500;
   color: #646cff;
