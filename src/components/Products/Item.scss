@@ -2,45 +2,43 @@
     width: fit-content;
     height: fit-content;
     border-radius: 5px;
-    box-shadow: 0px 5px 22px 3px rgb(0, 0, 0, 0.08);
+    box-shadow: 0px 5px 22px 3px rgba(0, 0, 0, 0.08);
 
-    :hover {
-        cursor: pointer;
-    }
-    
     .img-cont {
         background-color: #F7F8FA;
         display: flex;
         justify-content: center;
         width: fit-content;
     }
-    
+
     .candle-img {
         margin: 20px 80px;
-        transition: transform .2s;
+        transition: transform 0.2s;
     }
-    
-    .first:hover {
-        .candle-img {
-            transform: scale(1.1);
-        }
-    
-        .prod-title {
-            text-decoration: underline;
-        }
-    }
-    
+
     .info-cont {
         box-sizing: border-box;
         margin: 10px 26px;
     }
-    
+
     .prod-title {
         text-align: left;
     }
-    
+
     .prod-price {
         text-align: end;
-        color: green
+        color: green;
+    }
+
+    &:hover {
+        cursor: pointer;
+
+        .candle-img {
+            transform: scale(1.1);
+        }
+
+        .prod-title {
+            text-decoration: underline;
+        }
     }
 }
