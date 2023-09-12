@@ -1,15 +1,25 @@
 #Products {
     margin: 100px 0;
+    display: flex;
+    justify-content: center;
 
     .candle-products {
-        display: flex;
-        justify-content: space-around;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 50px;
     }
 
     .first {
         width: fit-content;
         height: fit-content;
-        border: 1px solid grey;
+        border-radius: 5px;
+        box-shadow: 0px 5px 22px 3px rgb(0, 0, 0, 0.08);
+    }
+
+    .first:hover {
+        cursor: pointer;
     }
 
     .img-cont {
@@ -21,6 +31,17 @@
 
     .candle-img {
         margin: 20px 80px;
+        transition: transform .2s;
+    }
+
+    .first:hover {
+        .candle-img {
+            transform: scale(1.1);
+        }
+
+        .prod-title {
+            text-decoration: underline;
+        }
     }
 
     .info-cont {
@@ -35,5 +56,23 @@
     .prod-price {
         text-align: end;
         color: green
+    }
+
+    @media (width < 1070px){
+        .candle-products {
+            grid-template-columns: auto auto auto;
+        }
+    }
+
+    @media (width < 800px){
+        .candle-products {
+            grid-template-columns: auto auto;
+        }
+    }
+
+    @media (width < 550px){
+        .candle-products {
+            grid-template-columns: auto;
+        }
     }
 }
