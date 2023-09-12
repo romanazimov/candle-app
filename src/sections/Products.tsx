@@ -1,6 +1,8 @@
 import './Products.scss'
 import first from '../assets/warm_peach.png'
 
+import Item from '../components/Products/Item';
+
 function Products() {
     return (
         <section id='Products'>
@@ -10,80 +12,14 @@ function Products() {
                     <p className='description'>Order it for you or your beloved ones</p>
                 </div>
                 <div className='candle-products'>
-                    <div className='first'>
-                        <div className='img-cont'>
-                            <img className="candle-img" src={first} alt="bg image" />
-                        </div>
-                        <div className='info-cont'>
-                            <p className='prod-title'>Warm Peach</p>
-                            <p className='prod-price'>$9.99</p>
-                        </div>
-                    </div>
-                    <div className='first'>
-                        <div className='img-cont'>
-                            <img className="candle-img" src={first} alt="bg image" />
-                        </div>
-                        <div className='info-cont'>
-                            <p className='prod-title'>Warm Peach</p>
-                            <p className='prod-price'>$9.99</p>
-                        </div>
-                    </div>
-                    <div className='first'>
-                        <div className='img-cont'>
-                            <img className="candle-img" src={first} alt="bg image" />
-                        </div>
-                        <div className='info-cont'>
-                            <p className='prod-title'>Warm Peach</p>
-                            <p className='prod-price'>$9.99</p>
-                        </div>
-                    </div>
-                    <div className='first'>
-                        <div className='img-cont'>
-                            <img className="candle-img" src={first} alt="bg image" />
-                        </div>
-                        <div className='info-cont'>
-                            <p className='prod-title'>Warm Peach</p>
-                            <p className='prod-price'>$9.99</p>
-                        </div>
-                    </div>
-
-
-                    <div className='first'>
-                        <div className='img-cont'>
-                            <img className="candle-img" src={first} alt="bg image" />
-                        </div>
-                        <div className='info-cont'>
-                            <p className='prod-title'>Warm Peach</p>
-                            <p className='prod-price'>$9.99</p>
-                        </div>
-                    </div>
-                    <div className='first'>
-                        <div className='img-cont'>
-                            <img className="candle-img" src={first} alt="bg image" />
-                        </div>
-                        <div className='info-cont'>
-                            <p className='prod-title'>Warm Peach</p>
-                            <p className='prod-price'>$9.99</p>
-                        </div>
-                    </div>
-                    <div className='first'>
-                        <div className='img-cont'>
-                            <img className="candle-img" src={first} alt="bg image" />
-                        </div>
-                        <div className='info-cont'>
-                            <p className='prod-title'>Warm Peach</p>
-                            <p className='prod-price'>$9.99</p>
-                        </div>
-                    </div>
-                    <div className='first'>
-                        <div className='img-cont'>
-                            <img className="candle-img" src={first} alt="bg image" />
-                        </div>
-                        <div className='info-cont'>
-                            <p className='prod-title'>Warm Peach</p>
-                            <p className='prod-price'>$9.99</p>
-                        </div>
-                    </div>
+                    <Item info={{ img: first, name: "Warm Peach", price: "$9.99" }} />
+                    <Item info={{ img: first, name: "Warm Peach", price: "$9.99" }} />
+                    <Item info={{ img: first, name: "Warm Peach", price: "$9.99" }} />
+                    <Item info={{ img: first, name: "Warm Peach", price: "$9.99" }} />
+                    <Item info={{ img: first, name: "Warm Peach", price: "$9.99" }} />
+                    <Item info={{ img: first, name: "Warm Peach", price: "$9.99" }} />
+                    <Item info={{ img: first, name: "Warm Peach", price: "$9.99" }} />
+                    <Item info={{ img: first, name: "Warm Peach", price: "$9.99" }} />
                 </div>
             </div>
         </section>
