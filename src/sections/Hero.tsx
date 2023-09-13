@@ -1,10 +1,12 @@
 import './Hero.scss'
-import bg_image from '../assets/bg-image.png'
+import x_image from '../assets/x-hero-image.png'
+import y_image from '../assets/y-hero-image.png'
 
 function Hero() {
     return (
         <section id='Hero'>
-            <img className="hero-img" src={bg_image} alt="bg image" />
+            <img className="hero-img-x" src={x_image} alt="bg image" />
+            <img className="hero-img-y" src={y_image} alt="bg image" />
             <div className='center-container'>
                 <div className='text-cont'>
                     <p className='title-icon'>🌱</p>

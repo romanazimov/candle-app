@@ -35,6 +35,10 @@ button:hover {
   opacity: 85%;
 }
 
+button:active {
+  opacity: 75%;
+}
+
 section:nth-child(n+2) {
   /* max-width: 1280px; */
   /* display: flex;

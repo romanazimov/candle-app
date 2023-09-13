@@ -5,10 +5,17 @@
     // Important for pos absolute later
     position: relative;
 
-    .hero-img {
+    .hero-img-x {
         width: 100%;
         height: 100%;
         object-fit: cover; 
+    }
+
+    .hero-img-y {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: none;
     }
 
     .center-container {
@@ -47,4 +54,13 @@
         margin-bottom: 30px;
     }
     
+    @media (width < 1040px) {
+        .hero-img-x {
+            display: none;
+        }
+
+        .hero-img-y {
+            display: flex;
+        }
+    }
 }
