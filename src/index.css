@@ -40,18 +40,19 @@ button:active {
 }
 
 section:nth-child(n+2) {
-  /* max-width: 1280px; */
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
+  display: flex;
+  justify-content: center;
+  margin: 100px 0;
+}
+
+section:nth-child(n+3) {
+  background-color:#F7F8FA;
+  
 }
 
 .container {
   max-width: 1280px;
   width: 100%;
-  /* display: flex;
-  flex-direction: column;
-  width: auto; */
 }
 
 .title {
