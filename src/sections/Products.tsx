@@ -21,6 +21,7 @@ function Products() {
                     <Item info={{ img: first, name: "Warm Peach", price: "$9.99" }} />
                     <Item info={{ img: first, name: "Warm Peach", price: "$9.99" }} />
                 </div>
+                <button className='btn-more'>See more</button>
             </div>
         </section>
     );
