@@ -2,7 +2,7 @@
 
     .candle-products {
         display: grid;
-        grid-template-columns: auto auto auto auto;
+        grid-template-columns: repeat(4, auto);
         justify-content: center;
         gap: 30px;
         margin-top: 50px;
@@ -61,13 +61,13 @@
 
     @media (width < 1070px){
         .candle-products {
-            grid-template-columns: auto auto auto;
+            grid-template-columns: repeat(3, auto);
         }
     }
 
     @media (width < 800px){
         .candle-products {
-            grid-template-columns: auto auto;
+            grid-template-columns: repeat(2, auto);
         }
     }
 

@@ -1,9 +1,17 @@
 #Benefits {
     background-color:#F7F8FA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    .container {
+    .upper-header {
+        display: none;
+    }
+
+    .split-container {
         display: flex;
         justify-content: space-around;
+        gap: 50px;
     }
 
     .cont-left {
@@ -23,25 +31,86 @@
         color: #56B280;
     }
 
+    ul {
+        padding: 0;
+        font-size: 20px;
+    }
+
     li {
         text-align: left;
-        font-size: 18px;
-        display: flex;
-        align-items: center;
-    }
-
-    ul {
-        padding-left: 0;
         list-style-type: none;
-        white-space: pre;
+        align-items: center;
+        margin-bottom: 10px;
     }
 
-    .li-tag {
-        font-weight: bold;
-        margin: 0 5px;
+    .li-cont {
+        display: flex;
     }
+
+
+    .bullet {
+        // font-size: 16px;
+        position: relative;
+        top: 3px;
+        margin-right: 10px;
+    }
+    // li {
+    //     text-align: left;
+    //     font-size: 18px;
+    //     display: flex;
+    //     align-items: center;
+    //     padding: 0;
+    //     }
+        
+    // ul {
+    //     padding-left: 0;
+    //     // list-style-type: none;
+    //     line-height: 1.8;
+    // }
+
+    // .li-tag {
+    //     font-weight: bold;
+    //     margin: 0 5px;
+    //     white-space: pre;
+    // }
 
     .benefits-img {
         max-width: 100%;
+    }
+
+    @media (width < 1040px) {
+        .split-container {
+            flex-direction: column-reverse;
+            justify-content: center;
+            gap: 0;
+        }
+
+        .cont-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .title {
+            text-align: center;
+        }
+        .description {
+            margin-bottom: 0;
+        }
+
+        .upper-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .left-header {
+            display: none;
+        }
+    }
+
+    @media (width < 550px) {
+        ul {
+            font-size: 16px;
+        }
     }
 }
