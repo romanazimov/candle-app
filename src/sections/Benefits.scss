@@ -1,12 +1,9 @@
 #Benefits {
-    display: flex;
-    box-sizing: border-box;
     background-color:#F7F8FA;
 
     .container {
         display: flex;
-        flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
     }
 
     .cont-left {
@@ -19,5 +16,32 @@
     .title {
         width: 350px;
         text-align: left;
+    }
+
+    .description {
+        margin-bottom: 30px;
+        color: #56B280;
+    }
+
+    li {
+        text-align: left;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+    }
+
+    ul {
+        padding-left: 0;
+        list-style-type: none;
+        white-space: pre;
+    }
+
+    .li-tag {
+        font-weight: bold;
+        margin: 0 5px;
+    }
+
+    .benefits-img {
+        max-width: 100%;
     }
 }
