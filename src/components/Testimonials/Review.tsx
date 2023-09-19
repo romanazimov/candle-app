@@ -1,7 +1,7 @@
 import './Review.scss';
 import '@smastrom/react-rating/style.css'
 import { Rating, ThinStar } from '@smastrom/react-rating';
-  
+
 const myStyles = {
     itemShapes: ThinStar,
     itemStrokeWidth: 2,
