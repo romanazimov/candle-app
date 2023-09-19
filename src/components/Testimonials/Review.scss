@@ -1,0 +1,33 @@
+#review-cont {
+    max-width: 350px;
+    max-height: 295px;
+    height: 295px;
+    width: 350px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .author-img {
+        border-radius: 50px;
+        width: 85px;
+        height: 85px;
+        object-fit:cover;
+    }
+
+    .rating {
+        margin-top: 10px;
+    }
+
+    .review {
+        font-size: 20px;
+        padding: 0 15px;
+        margin-top: 20px;
+    }
+
+    .author {
+        font-size: 18px;
+        color: #7C8087;
+    }
+}

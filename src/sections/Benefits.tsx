@@ -1,5 +1,5 @@
 import './Benefits.scss';
-import benefits_image from '../assets/benefits-image.png';
+import benefits_image from '../assets/Benefits/benefits-image.png';
 import { AiOutlineCheckCircle } from "react-icons/ai";
 
 function Benefits() {

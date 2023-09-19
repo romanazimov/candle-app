@@ -1,0 +1,14 @@
+#Testimonials {
+    background-color: #56b27f23;
+
+    .review-cont {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 40px;
+    }
+
+    .swiper {
+        background-color: red;
+    }
+}

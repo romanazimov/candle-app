@@ -1,6 +1,6 @@
 import './Hero.scss'
-import x_image from '../assets/x-hero-image.png'
-import y_image from '../assets/y-hero-image.png'
+import x_image from '../assets/Hero/x-hero-image.png'
+import y_image from '../assets/Hero/y-hero-image.png'
 
 function Hero() {
     return (

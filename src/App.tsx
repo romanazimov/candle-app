@@ -2,6 +2,7 @@ import './App.css'
 import Hero from './sections/Hero'
 import Products from './sections/Products';
 import Benefits from './sections/Benefits';
+import Testimonials from './sections/Testimonials';
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
       <Hero />
       <Products />
       <Benefits />
+      <Testimonials />
     </>
   );
 }

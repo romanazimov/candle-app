@@ -1,9 +1,38 @@
+import { useState, useEffect } from 'react'
 import './Products.scss'
-import first from '../assets/warm_peach.png'
-
 import Item from '../components/Products/Item';
+import staticData from '../data/Products'
+
+interface Product {
+    imageUrl: string;
+    name: string;
+    price: number;
+}
 
 function Products() {
+    const [productData, setProductData] = useState<Product[]>([]);
+
+    useEffect(() => {
+        fetch('https://localhost:7184/Item')
+            .then((response) => response.json())
+            .then((data) => {
+                setProductData(data);
+                // console.log(data);
+            })
+            .catch((error) => {
+                setProductData(staticData);
+                console.error('Error fetching data:', error);
+            });
+        }, []);
+
+    const itemElems = 
+        productData.map((product, index) => (
+            <Item key={index} info={product} />
+        ))
+
+
+    // console.log(itemElems);
+
     return (
         <section id='Products'>
             <div className='container'>
@@ -12,14 +41,7 @@ function Products() {
                     <p className='description'>Order it for you or your beloved ones</p>
                 </div>
                 <div className='candle-products'>
-                    <Item info={{ img: first, name: "Warm Peach", price: "$9.99" }} />
-                    <Item info={{ img: first, name: "Warm Peach", price: "$9.99" }} />
-                    <Item info={{ img: first, name: "Warm Peach", price: "$9.99" }} />
-                    <Item info={{ img: first, name: "Warm Peach", price: "$9.99" }} />
-                    <Item info={{ img: first, name: "Warm Peach", price: "$9.99" }} />
-                    <Item info={{ img: first, name: "Warm Peach", price: "$9.99" }} />
-                    <Item info={{ img: first, name: "Warm Peach", price: "$9.99" }} />
-                    <Item info={{ img: first, name: "Warm Peach", price: "$9.99" }} />
+                    {itemElems}
                 </div>
                 <button className='btn-more'>See more</button>
             </div>
