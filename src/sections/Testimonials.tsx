@@ -15,7 +15,7 @@ function Testimonials() {
                 <p className='description'>Some quotes from our happy customers</p>
                 <div className='review-cont'>
                     <Review info={{img: img1, rating: 4.5, review: '"I love it! No more air fresheners"', author: "Julie"}}/>
-                    <Review info={{img: img2, rating: 5, review: '"Recommended for everyone"', author: "Eduardo"}}/>
+                    <Review info={{img: img2, rating: 5, review: '"Recommended for everyone, the perfect candles"', author: "Eduardo"}}/>
                     <Review info={{img: img3, rating: 4.5, review: '"Smells great! I love that it lasts a while"', author: "Victoria"}}/>
                 </div>
                 {/* <Swiper className='review-cont'
