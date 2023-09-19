@@ -22,7 +22,7 @@ function Testimonials() {
                 </div> */}
                 <Swiper className='review-cont'
                     modules = {[Navigation, Pagination, Autoplay]}
-                    spaceBetween={100}
+                    spaceBetween={20}
                     slidesPerView={1}
                     navigation
                     pagination = {{ clickable: true}}
@@ -44,8 +44,6 @@ function Testimonials() {
                     <SwiperSlide><Review info={{img: img2, rating: 5, review: '"Recommended for everyone, the perfect candles"', author: "Eduardo"}}/></SwiperSlide>
                     <SwiperSlide><Review info={{img: img3, rating: 4.5, review: '"Smells great! I love that it lasts a while"', author: "Victoria"}}/></SwiperSlide>
                 </Swiper>
-                {/* <div className="swiper-button-next"></div> */}
-                {/* <div className="swiper-button-prev"></div> */}
             </div>
         </section>
     )
