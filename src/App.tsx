@@ -4,6 +4,7 @@ import Products from './sections/Products';
 import Benefits from './sections/Benefits';
 import Testimonials from './sections/Testimonials';
 import Popular from './sections/Popular';
+import Footer from './sections/Footer';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <Benefits />
       <Testimonials />
       <Popular />
+      <Footer />
     </>
   );
 }
