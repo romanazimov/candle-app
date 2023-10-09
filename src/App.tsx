@@ -3,6 +3,7 @@ import Hero from './sections/Hero'
 import Products from './sections/Products';
 import Benefits from './sections/Benefits';
 import Testimonials from './sections/Testimonials';
+import Popular from './sections/Popular';
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <Products />
       <Benefits />
       <Testimonials />
+      <Popular />
     </>
   );
 }

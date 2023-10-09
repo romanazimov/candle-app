@@ -1,0 +1,41 @@
+#Popular {
+
+    .candle-products {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        justify-content: center;
+        gap: 30px;
+        margin-top: 50px;
+    }
+
+    .btn-more {
+        visibility: hidden;
+    }
+
+    @media (width < 1070px){
+        .candle-products {
+            grid-template-columns: repeat(3, auto);
+        }
+    }
+
+    @media (width < 800px){
+        .candle-products {
+            grid-template-columns: repeat(2, auto);
+        }
+    }
+
+    @media (width < 550px){
+        .candle-products {
+            grid-template-columns: auto;
+        }
+
+        .candle-products > *:nth-child(n+5) {
+            display: none;
+        }
+
+        .btn-more {
+            visibility: visible;
+            margin-top: 40px;
+        }
+    }
+}
